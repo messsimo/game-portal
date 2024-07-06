@@ -1,0 +1,101 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Базовые стили для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Установка шрифтра */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 35%);
+    width: 100%;
+}
+
+/* Установка базовых значений для элементов */
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;  /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+/* Установка заднего фона для страницы */
+.wrapper {
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 35%);
+    width: 100%;
+}
+
+/* Cтили для шапки сайта  */
+header {
+    max-width: 100%;
+    height: 100%;
+    padding-top: 42px;
+}
+
+.container {
+    padding-left: 82px;
+}
+
+header .logo {
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+    padding-right: 82px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+header nav ul li .btn {
+    background-color: #FA9021;
+    width: 131px;
+    height: 41px;
+    font-size: 13px;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+} 
+
+/* Эффект при наведении на кнопку */
+header nav ul li .btn:hover {
+    background-color: #c2731f;
+}
+
+/* Эффект при наведении на ссылке*/
+header nav ul li a:not(.active):not(.btn):hover {
+    border-bottom: 3px solid #FA9021;
+    border-radius: 2px;
+}
+
+header nav ul li .active::after {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 4px;
+    background-color: #FA9021;
+    border-radius: 10px;
+    margin-left: -10px;
+} 

@@ -1,0 +1,88 @@
+/* Cтили для секции с рассылкой */
+.send {
+    padding-left: 150px;
+    padding-bottom: 150px;
+    padding-right: 150px;
+}
+
+.send h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.send p {
+    width: 545px;
+    font-size: 16px;
+    padding-bottom: 70px;
+}
+
+.send .loop {
+    background-color: #1C140F;
+    border-radius: 15px;
+    padding: 0px 3%;
+    padding-top: 40px;
+}
+
+.send .loop h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    align-items: colum;
+}
+
+.send .loop p {
+    font-size: 16px;
+    width: 436px;
+}
+
+.send .loop .form {
+    float: right;
+}
+
+.send .loop .form input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 370px;
+    height: 48px;
+    outline: none;
+    color: #898989;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding-left: 15px;
+    position: relative;
+    right: -120px;
+    z-index: 0;
+}
+
+.send .loop .form input::placeholder {
+    color: #898989;
+}
+
+.send .loop .form button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    background: rgb(250,131,5);
+    background: linear-gradient(177deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 35%);
+    width: 105px;
+    height: 37px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+/* Эффект при наведение на кнопку */
+.send .loop .form button:hover {
+    background: rgb(250,131,5);
+    background: linear-gradient(177deg, rgba(250,131,5,1) 0%, rgba(201,128,50,1) 35%);
+}
+
+#error {
+    margin-left: 120px;
+}

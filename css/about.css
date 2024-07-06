@@ -1,0 +1,192 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Базовые стили для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Установка шрифтра */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* Установка базовых значений для элементов */
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;  /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+/* Установка заднего фона для страницы */
+.wrapper {
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 35%);
+    width: 100%;
+}
+
+/* Cтили для шапки сайта  */
+header {
+    max-width: 100%;
+    height: 100%;
+    padding-top: 42px;
+}
+
+.container {
+    padding-left: 82px;
+}
+
+header .logo {
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+    padding-right: 82px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+header nav ul li .btn {
+    background-color: #FA9021;
+    width: 131px;
+    height: 41px;
+    font-size: 13px;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+} 
+
+/* Эффект при наведении на кнопку */
+header nav ul li .btn:hover {
+    background-color: #c2731f;
+}
+
+/* Эффект при наведении на ссылке*/
+header nav ul li a:not(.active):not(.btn):hover {
+    border-bottom: 3px solid #FA9021;
+    border-radius: 2px;
+}
+
+header nav ul li .active::after {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 4px;
+    background-color: #FA9021;
+    border-radius: 10px;
+    margin-left: -10px;
+} 
+
+
+
+/* Cтили для секции hero */
+.hero {
+    padding-left: 150px;
+    padding-bottom: 150px;
+    height: 700px;
+    position: relative;
+}
+
+.hero .location {
+    padding-top: 150px;
+    font-size: 12px;
+    padding-bottom: 70px;
+}
+
+.hero .location span b {
+    color: #E47500;
+    font-weight: 400;
+}
+
+.hero .main-text {
+    width: 425px;
+}
+
+.hero .main-text h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.hero .main-text p {
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 70px;
+}
+
+.hero .main-text .btn {
+    background: rgb(250,131,5);
+    background: linear-gradient(177deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 35%);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    width: 176px;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.hero .main-text .btn:hover {
+    background: rgb(250,131,5);
+    background: linear-gradient(177deg, rgba(250,131,5,1) 0%, rgba(201,128,50,1) 35%);
+}
+
+.hero .slider {
+    float: right;
+}
+
+.hero .slider .sl-photo {
+    width: 739px;
+    height: 656px;
+    top: -200px;
+    margin-top: 40px;
+}
+
+.hero .slider .button {
+    background-color: #333333;
+    width: 179px;
+    height: 67px;
+    position: relative;
+    top: -74px;
+}
+
+.hero .slider .button img {
+    line-height: 67px;
+    margin-top: 20px;
+}
+
+.hero .slider .button .ar-lf,
+.hero .slider .button .ar-rt {
+    margin-top: 25px;
+    display: inline;
+    place-items: center;
+}
+
+.hero .slider .button .ar-lf {
+    margin-left: 62px;
+}
+
+.hero .slider .button img {
+    margin: 0 10px;
+}

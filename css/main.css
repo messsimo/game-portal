@@ -1,0 +1,253 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Базовые стили для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Установка шрифтра */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* Установка базовых значений для элементов */
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;  /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+
+/* Cтили для блока hero */
+.hero {
+    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-left: 150px;
+    width: 527px;
+}
+
+.hero .hero--text h2 {
+    color: #E87D0E;
+    font-size: 20;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.hero .hero--text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.hero .hero--text p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.hero .hero--text .btn {
+    margin-top: 50px;
+    background: rgb(250,131,5);
+    background: linear-gradient(177deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 35%);
+    width: 195px;
+    height: 53px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Эффект при наведение на кнопку */
+.hero .hero--text .btn:hover {
+    background: rgb(250,131,5);
+    background: linear-gradient(177deg, rgba(250,131,5,1) 0%, rgba(201,128,50,1) 35%);
+}
+
+.hero img {
+    position: absolute;
+    top: -50px;
+    right: -70px;
+    float: right;
+}
+
+
+
+/* Стили для коллекции игры */
+.collection {
+    padding-bottom: 150px;
+    padding-left: 150px;
+}
+
+.collection h2 {
+    font-size: 31px;
+    font-weight: bold;
+    padding-bottom: 80px;
+}
+
+.collection .btn, .projects .btn {
+    display: block;
+    float: right;
+    color: white;
+    padding: 10px 27px;
+    border-radius: 12px;
+    background-color: #25211D;
+    margin-right: 120px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Анимация при наведении на кнопку */
+.collection .btn:hover {
+    transform: scale(1.1);
+}
+
+.collection .games {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-right: 110px;
+}
+
+.collection .games .block .fire {
+    text-align: center;
+}
+
+.collection .games .block p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.collection .games .block p img {
+    padding-right: 10px;
+    width: 15px;
+    height: 20px;
+}
+
+
+
+/* Промежуточная секция */
+.big-text {
+    width: 826px;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 150px;
+}
+
+
+
+/* Cтили для секции информации */
+.info {
+    padding-left: 150px;  
+    padding-bottom: 150px;
+}
+
+.info h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.info p {
+    width: 545px;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.info .spiderman {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+/* Стили для секции информация-2 */
+.info-2 {
+    background: url("/images/background.png") no-repeat center center fixed;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.info-2 h2 {
+    text-align: center;
+    font-size: 30px;
+    width: 826px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+
+.info-2 p {
+    text-align: center;
+    width: 820px;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.info-2 .about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.info-2 .about .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+    display: grid;
+    place-items: center;
+}
+
+.info-2 .about .block .object {
+    margin-bottom: 20px;
+}
+
+
+.info-2 .about .block .arrow {
+    margin-top: 15px;
+}
+
+
+
+/* Cтили для секции с проектами */
+.projects {
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.projects h3 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.projects p {
+    width: 497px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    padding-bottom: 100px;
+}
+
+.projects .photo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects .photo img {
+    margin: 10px 10px;
+}
+
+.projects .btn {
+    float: none;
+    text-align: center;
+    margin: 60px auto;
+    width: 59px;
+}
