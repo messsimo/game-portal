@@ -190,3 +190,153 @@ header nav ul li .active::after {
 .hero .slider .button img {
     margin: 0 10px;
 }
+
+
+
+/* Стили для секции с работами */
+.works {
+    padding-bottom: 150px;
+    padding-left: 150px;
+}
+
+.works h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+.works .container-blocks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-right: 150px;
+}
+
+.works .container-blocks .blocks {
+    width: 378px;
+    background-color: #1C140F;
+    margin-right: 40px;
+    padding: 70px 30px;
+    border-radius: 15px;
+}
+
+.works .container-blocks .blocks .p {
+    font-size: 14px;
+    color: white;
+    line-height: 39px;
+    text-align: center;
+    opacity: 1;
+}
+
+.works .container-blocks .blocks .bg-purple {
+    opacity: 0.6;
+    background-color: #B000DC;
+    width: 140px;
+    height: 39px;
+    border-radius: 10px;
+}
+
+.works .container-blocks .blocks .bg-brown {
+    opacity: 0.6;
+    background-color: #DC4200;
+    width: 140px;
+    height: 39px;
+    border-radius: 10px;
+}
+
+.works .container-blocks .blocks .bg-green {
+    opacity: 0.6;
+    background-color: #00DC8D;
+    width: 140px;
+    height: 39px;
+    border-radius: 10px;
+}
+
+.works .container-blocks .blocks h3 {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.works .container-blocks .blocks span {
+    font-size: 14px;
+}
+
+
+
+/* Стили для секции с описание персонажа */
+.description {
+    background-color: #1C140F;
+    margin-bottom: 150px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description img {
+    width: 496px;
+    height: 460px;
+    margin-top: 100px;
+}
+
+.description .desc-text {
+    padding-right: 150px;
+    padding-top: 130px;
+    width: 540px;
+}
+
+.description .desc-text p {
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+.description .desc-text h2 {
+    font-size: 28px;
+    padding-bottom: 25px;
+}
+
+.description .desc-text span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+/* Стили для секции с командой */
+.team {
+    padding-bottom: 150px;
+    padding-left: 150px;
+}
+
+.team h1 {
+    font-size: 25px;
+    padding-bottom: 60px;
+}
+
+.team .members {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-right: 150px;
+}
+
+.team .members .person {
+    width: 295px;
+    background-color: #1C140F;
+    border-radius: 15px;
+    padding: 30px 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.team .members .person p {
+    font-size: 19px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.team .members .person span {
+    color: #E8E8E8;
+    font-size: 16px;
+    font-weight: 200;
+}

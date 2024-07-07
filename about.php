@@ -20,9 +20,9 @@
             <ul>
                 <li><a href="/main.php">Home</a></li>
                 <li><a href="/about.php" class="active">About Us</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#" class="btn">Contact us</a></li>
+                <li><a href="/portfolio.php">Portfolio</a></li>
+                <li><a href="/news.php">News</a></li>
+                <li><a href="/contact.php" class="btn">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -50,10 +50,76 @@
         </div>
     </div>
 
+    <!-- Секция с работами -->
+    <div class="works">
+        <h2>Why work with us</h2>
+
+        <div class="container-blocks">
+            <div class="blocks">
+                <p class="p bg-purple">Lorem ipsum</p>
+                <h3>Lorem Ipsum</h3>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+            </div>
+
+            <div class="blocks">
+                <p class="p bg-brown">Lorem ipsum</p>
+                <h3>Lorem Ipsum</h3>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+            </div>
+
+            <div class="blocks">
+                <p class="p bg-green">Lorem ipsum</p>
+                <h3>Lorem Ipsum</h3>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция с описанием персонажа -->
+    <div class="description">
+        <img src="images/slider2.png" alt="Elfa">
+
+        <div class="desc-text">
+            <p>Lorem ipsum</p>
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h2>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</span>
+        </div>
+    </div>
+
+    <!-- Cекция с командой -->
+    <div class="team">
+        <h1>Our Team</h1>
+
+        <div class="members">
+            <div class="person">
+                <img src="images/person1.png" alt="Jhon">
+                <p>John Peter</p>
+                <span>Founder</span>
+            </div>
+
+            <div class="person">
+                <img src="images/person2.png" alt="Daniel">
+                <p>Dana Moreno</p>
+                <span>Co-Founder</span>
+            </div>
+
+            <div class="person">
+                <img src="images/person3.png" alt="Kate">
+                <p>Kate Willson</p>
+                <span>Co-Founder</span>
+            </div>
+
+            <div class="person">
+                <img src="images/person4.png" alt="Sum">
+                <p>Sum Sulek</p>
+                <span>Co-Founder</span>
+            </div>
+        </div>
+    </div>
 
 <?php
     // Подключение блока с рассылкой 
-    require_once("blocks/loop.php");
+    require_once("blocks/newsletter.php");
 ?>
 </div>
 <?php

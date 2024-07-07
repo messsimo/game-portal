@@ -38,7 +38,7 @@
 <noscript>JavaScript dosen't work!</noscript>
 
 <!-- Подключение скрпита для валидации почты при рассылки -->
-<script src="/srcripts/loop.js"></script>
+<script src="/srcripts/newsletter.js"></script>
 
 <!-- Подключения скрпита для слайдера (About) -->
 <script src="/srcripts/slider.js"></script>

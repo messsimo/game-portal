@@ -21,9 +21,9 @@
             <ul>
                 <li><a href="/main.php" class="active">Home</a></li>
                 <li><a href="/about.php">About Us</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#" class="btn">Contact us</a></li>
+                <li><a href="/portfolio.php">Portfolio</a></li>
+                <li><a href="/news.php">News</a></li>
+                <li><a href="/contact.php" class="btn">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -144,7 +144,7 @@
 
 <?php
     // Подключеие блока с рассылкой
-    require_once("blocks/loop.php");
+    require_once("blocks/newsletter.php");
 
     // Подключение футера сайта
     require_once("blocks/footer.php");
