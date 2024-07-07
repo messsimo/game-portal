@@ -420,6 +420,7 @@ header nav ul li .active::after {
     border: 2px solid white;
     border-radius: 15px;
     margin-right: 50px;
+    transition: all 0.5s ease-in-out;
 }
 
 .clients .review .block .header {
@@ -479,6 +480,7 @@ header nav ul li .active::after {
 .clients .review .active {
     background-color: #0F0901;
     border: 2px solid #DC7000;
+    transition: all 0.5s ease-in-out;
 }
 
 .clients .navigation {

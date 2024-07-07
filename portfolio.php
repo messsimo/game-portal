@@ -197,13 +197,13 @@
 
         <div class="navigation">
             <div class="btns">
-                <img src="images/btn-rt.png" alt="Button right" id="btn-right">
-                <img src="images/btn-lt.png" alt="Button left" id="btn-left">
+                <img src="images/btn-rt.png" alt="Button right" id="btn-right" onclick="nextReview(-1)">
+                <img src="images/btn-lt.png" alt="Button left" id="btn-left" onclick="nextReview(1)">
             </div>
 
-            <div class="place active"></div>
-            <div class="place"></div>
-            <div class="place"></div>
+            <div class="place active dot" onclick="currentReview(1)"></div>
+            <div class="place dot" onclick="currentReview(2)"></div>
+            <div class="place dot" onclick="currentReview(3)"></div>
         </div>
     </div>
 
