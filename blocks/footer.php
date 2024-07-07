@@ -43,5 +43,8 @@
 <!-- Подключения скрпита для слайдера (About) -->
 <script src="/srcripts/slider.js"></script>
 
+<!-- Подключение скрипта для слайдера отзывов -->
+<script src="/srcripts/slider_reviews.js"></script>
+
 </body>
 </html>

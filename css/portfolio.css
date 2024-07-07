@@ -1,0 +1,527 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Базовые стили для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Установка шрифтра */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 35%);
+    width: 100%;
+}
+
+/* Установка базовых значений для элементов */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;  /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+/* Установка заднего фона для страницы */
+.wrapper {
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 35%);
+    width: 100%;
+}
+
+/* Cтили для шапки сайта  */
+header {
+    max-width: 100%;
+    height: 100%;
+    padding-top: 42px;
+}
+
+.container {
+    padding-left: 82px;
+}
+
+header .logo {
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+    padding-right: 82px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+header nav ul li .btn {
+    background-color: #FA9021;
+    width: 131px;
+    height: 41px;
+    font-size: 13px;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+} 
+
+header nav ul li .btn:hover {
+    background-color: #c2731f;
+}
+
+header nav ul li a:not(.active):not(.btn):hover {
+    border-bottom: 3px solid #FA9021;
+    border-radius: 2px;
+}
+
+header nav ul li .active::after {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 4px;
+    background-color: #FA9021;
+    border-radius: 10px;
+    margin-left: -10px;
+} 
+
+
+
+/* Стили для секции с навигацией */
+.nav {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.nav span,
+.nav span b {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav span b {
+    color: #E47500
+}
+
+
+
+/* Cтили для секции о сайте */
+.about {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 33px;
+    padding-bottom: 15px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.about .info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C140F;
+    margin-top: 70px;
+    border-radius: 15px;
+}
+
+.about .info .block-1 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    display: inline-block;
+}
+
+.about .info .block-3 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-right: 120px;
+}
+
+.about .info .block-2 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    display: inline-block;
+}
+
+.about .info .block-1 img,
+.about .info .block-2 img,
+.about .info .block-3 img {
+    vertical-align: middle;
+}
+
+.about .info .block-1 .text,
+.about .info .block-2 .text,
+.about .info .block-3 .text {
+    display: inline-block;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.about .info .block-1 .text h3,
+.about .info .block-2 .text h3,
+.about .info .block-3 .text h3 {
+    font-size: 25px;
+}
+
+.about .info .block-1 .text p, 
+.about .info .block-2 .text p,
+.about .info .block-3 .text p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.about .info .block-1::after, 
+.about .info .block-2::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 125px;
+    background-color: #ffff;
+    border-radius: 10px;
+    float: right;
+    margin-left: 120px;
+    margin-top: -35px
+}
+
+
+
+/* Стили для секции с видео */
+.video {
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+}
+
+.video .container-right {
+    float: right;
+    width: 428px;
+}
+
+.video .container-right h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.video .container-right p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.video .container-right .plus {
+    padding-bottom: 10px;
+}
+
+.video .container-right .plus img,
+.video .container-right .plus span {
+    vertical-align: middle;
+}
+
+.video .container-right .plus img {
+    margin-right: 5px;
+}
+
+.video .container-right .plus span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+/* Cтили для секции с описание игры-1 */
+.info-game-1 {
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+    height: 489px;
+}
+
+.info-game-1 img {
+    width: 496px;
+    height: 489px;
+    float: right;
+}
+
+.info-game-1 .main-text {
+    width: 536px;
+}
+
+.info-game-1 .main-text h1 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.info-game-1 .main-text p,
+.info-game-1 .main-text span {
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.info-game-1 .main-text button {
+    margin-top: 50px;
+    background-color: #DC7000;
+    border: none;
+    color: white;
+    font-weight: 300;
+    width: 177px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Cтили для секции с описанием игры-2 */
+.info-game-2 {
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+    height: 489px;
+}
+
+.info-game-2 img {
+    width: 496px;
+    height: 489px;
+}
+
+.info-game-2 .main-text {
+    width: 536px;
+    float: right;
+}
+
+.info-game-2 .main-text h1 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.info-game-2 .main-text p,
+.info-game-2 .main-text span {
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.info-game-2 .main-text button {
+    margin-top: 50px;
+    background-color: #DC7000;
+    border: none;
+    color: white;
+    font-weight: 300;
+    width: 177px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Стили для описания игры-3 */
+.info-game-3 {
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+    height: 489px;
+}
+
+.info-game-3 img {
+    width: 496px;
+    height: 489px;
+    float: right;
+}
+
+.info-game-3 .main-text {
+    width: 536px;
+}
+
+.info-game-3 .main-text h1 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.info-game-3 .main-text p,
+.info-game-3 .main-text span {
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.info-game-3 .main-text button {
+    margin-top: 50px;
+    background-color: #DC7000;
+    border: none;
+    width: 177px;
+    height: 50px;
+    color: white;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Cтили для секции с отзывами */
+.clients {
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    margin-bottom: 150px;
+    background-color: #1C140F;
+}
+
+.clients h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+    width: 447px;
+    padding-top: 80px;
+}
+
+.clients h2 {
+    width: 555px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 80px;
+}
+
+.clients .review {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .review .block {
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-right: 50px;
+}
+
+.clients .review .block .header {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.clients .review .block .header img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clients .review .block .info {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.clients .review .block .info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.clients .review .block .info p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #4F5665;
+}
+
+.clients .review .block .rating {
+    float: right;
+    padding-right: 30px;
+}
+
+.clients .review .block .rating img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clients .review .block .rating span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+.clients .review .block .txt {
+    font-size: 14px;
+    font-weight: 300;
+    width: 340px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* Cтили для отзыва с классом .active */
+.clients .review .active {
+    background-color: #0F0901;
+    border: 2px solid #DC7000;
+}
+
+.clients .navigation {
+    padding-top: 100px;
+}
+
+.clients .navigation .place {
+    background-color: #ffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Стили для полузунка с классом .active */
+.clients .navigation .active {
+    background-color: #DC7000;
+    width: 45px;
+    height: 15px;
+}
+
+.clients .navigation .btns {
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 70px;
+    margin-top: -50px;
+}
+
+.clients .navigation .btns #btn-right {
+   margin-top: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
