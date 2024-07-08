@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Блок с задним фоном сайта -->
-    <div class="wrapper"></div>
+    <div class="wrapper">
 
     <!-- Cекция с шапкой сайта -->
     <header class="container">
@@ -207,7 +207,7 @@
         </div>
     </div>
 
-
+    </div>
 <?php
     // Подключение блока с рассылкой
     require_once("blocks/newsletter.php");

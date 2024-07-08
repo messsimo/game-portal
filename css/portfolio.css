@@ -494,6 +494,7 @@ header nav ul li .active::after {
     border-radius: 40px;
     display: inline-block;
     margin-right: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Стили для полузунка с классом .active */
@@ -501,6 +502,7 @@ header nav ul li .active::after {
     background-color: #DC7000;
     width: 45px;
     height: 15px;
+    transition: all 0.5s ease-in-out;
 }
 
 .clients .navigation .btns {
