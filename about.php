@@ -21,8 +21,8 @@
                 <li><a href="/main.php">Home</a></li>
                 <li><a href="/about.php" class="active">About Us</a></li>
                 <li><a href="/portfolio.php">Portfolio</a></li>
-                <li><a href="/news.php">News</a></li>
-                <li><a href="/contact.php" class="btn">Contact us</a></li>
+                <li><a href="/contact.php">Contact us</a></li>
+                <li><a href="/signin.php" class="btn">Sign In</a></li>
             </ul>
         </nav>
     </header>

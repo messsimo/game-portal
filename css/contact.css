@@ -259,7 +259,6 @@ header nav ul li a:not(.btn):hover {
     padding: 9px 17px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     border: none;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -267,6 +266,11 @@ header nav ul li a:not(.btn):hover {
     margin-left: 475px;
     margin-top: 40px;
     margin-bottom: 40px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.send-mes form button:hover {
+    background-color: #c97923;
 }
 
 .send-mes .deco-top,

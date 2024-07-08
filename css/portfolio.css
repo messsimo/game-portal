@@ -292,6 +292,12 @@ header nav ul li .active::after {
     width: 177px;
     height: 50px;
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.info-game-1 .main-text button:hover {
+    background-color: #c97923;
 }
 
 
@@ -336,8 +342,13 @@ header nav ul li .active::after {
     width: 177px;
     height: 50px;
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.4s ease-in-out;
 }
 
+.info-game-2 .main-text button:hover {
+    background-color: #c97923;
+}
 
 
 /* Стили для описания игры-3 */
@@ -380,6 +391,12 @@ header nav ul li .active::after {
     color: white;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.info-game-3 .main-text button:hover {
+    background-color: #c97923;
 }
 
 
