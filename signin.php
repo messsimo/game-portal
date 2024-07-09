@@ -8,6 +8,12 @@
     <title>Account</title>
 </head>
 <body>
+    <?php   
+        // Подключение сессии
+        session_start();
+    ?>
+
+
     <!-- Cекция с шапкой сайта -->
     <header class="container">
         <span class="logo">GamePortal</span>
@@ -41,11 +47,12 @@
                 <button class="btn-sign">Sign In</button>
          </div>
     </div>
+
         <div class="form">
             <div class="main-form form-reg">
                 <h2>Registration</h2>
 
-                <form action="reg_post.php" method="POST">
+                <form action="/data/reg_post.php" method="POST">
                     <label for="login">Login</label><br>
                     <input type="text" name="username" id="login"><br>
 
@@ -55,7 +62,9 @@
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password"><br>
 
-                    <span class="alert-reg"></span><br>
+                    <span class="alert-reg">
+                        <?= $_SESSION["alert-reg"] ?? '' ?>
+                    </span><br>
 
                     <button type="submit">Register</button>
                 </form>
@@ -64,14 +73,16 @@
             <div class="main--form form-sign">
                 <h2>Sign In</h2>
 
-                <form action="sign_post.php" method="POST">
+                <form action="/data/sign_post.php" method="POST">
                     <label for="login">Login</label><br>
                     <input type="text" name="username" id="login"><br>
 
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password"><br>
 
-                    <span class="alert-sign"></span><br>
+                    <span class="alert-sign">
+                        <?= $_SESSION["alert-sign"] ?? '' ?>
+                    </span><br>
 
                     <button type="submit">Sign In</button>
                 </form>

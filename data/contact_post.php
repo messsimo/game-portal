@@ -19,7 +19,7 @@
 
     // Функция по переадрессации
     function redirect() {
-        header("Location: contact.php");
+        header("Location: /contact.php");
     }
 
     // Валидация данных 

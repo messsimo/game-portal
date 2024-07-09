@@ -75,7 +75,7 @@
             session_start();
         ?>
 
-        <form action="contact_post.php" method="POST">
+        <form action="/data/contact_post.php" method="POST">
             <div class="top">
                 <div>
                     <label for="firstname">First Name</label><br>
