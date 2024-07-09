@@ -46,5 +46,9 @@
 <!-- Подключение скрипта для слайдера отзывов -->
 <script src="/srcripts/slider_reviews.js"></script>
 
+<!-- Подключение скрпита для формы регистрации/входа -->
+<script src="/srcripts/reg_form.js"></script>
+
+
 </body>
 </html>

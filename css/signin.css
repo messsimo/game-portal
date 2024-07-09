@@ -93,3 +93,233 @@ header nav ul li .active::after {
     border-radius: 10px;
     margin-left: -10px;
 } 
+
+
+
+/* Cтили для навигации */
+.location {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.location span {
+    color: #E47500;
+}
+
+
+/* Стили для секции регистрации/входа */
+.user-form {
+    padding: 150px 240px;
+}
+
+.user-form .bg-form {
+    background-color: #1C140F;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    position: relative;
+}
+
+.user-form .bg-form .reg,
+.user-form .bg-form .sign {
+    padding-top: 160px;
+}
+
+.user-form .bg-form .reg {
+    padding-left: 80px;
+}
+
+.user-form .bg-form .sign {
+    padding-right: 80px;
+}
+
+.user-form .bg-form .reg h2,
+.user-form .bg-form .sign h2 {
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+
+.user-form .bg-form .reg button,
+.user-form .bg-form .sign button {
+    background-color: #FA9021;
+    width: 131px;
+    height: 41px;
+    font-size: 13px;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-left: 60px;
+}
+
+.user-form .bg-form .reg button:hover,
+.user-form .bg-form .sign button:hover {
+    background-color: #c2731f;
+}
+
+.user-form .form {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    left: 280px;
+    top: 340px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+
+    overflow: hidden;
+}
+
+.user-form .form.active {
+    left: 46%;
+}
+
+/* Форма */
+.user-form .form .main--form {
+    position: absolute;
+}
+
+/* Форма регистрации */
+.user-form .form .form-reg {
+    padding-top: 50px;
+    padding-left: 70px;
+    left: 0;
+    top: 340px;
+    transition: 0.5s ease;
+}
+
+.user-form .form .form-reg h2 {
+    font-size: 33px;
+    padding-bottom: 30px;
+}
+
+.user-form .form .form-reg label {
+    font-size: 18px;
+}
+
+.user-form .form .form-reg input {
+    width: 335px;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 34px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #DC7000;
+    background-color: #1C140F;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.user-form .form .form-reg button {
+    background-color: #FA9021;
+    width: 131px;
+    height: 41px;
+    font-size: 13px;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.user-form .form .form-reg button:hover {  
+    background-color: #c2731f;
+}
+
+.user-form .form .form-reg .alert {
+    padding-top: 15px;
+    font-size: 14px;
+    color: rgb(185, 183, 183);
+}
+
+/* Стили для формы входа */
+.user-form .form .form-sign  {
+    padding-top: 50px;
+    padding-left: 70px;
+    left: 90%;
+    top: 0px;
+    transition: 0.5s ease;
+}
+
+.user-form .form .form-sign  h2 {
+    font-size: 33px;
+    padding-bottom: 30px;
+}
+
+.user-form .form .form-sign label {
+    font-size: 18px;
+}
+
+.user-form .form .form-sign  input {
+    width: 335px;
+    padding-left: 15px;
+    padding-top: 1px;
+    height: 34px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #DC7000;
+    background-color: #1C140F;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.user-form .form .form-sign  button {
+    background-color: #FA9021;
+    width: 131px;
+    height: 41px;
+    font-size: 13px;
+    padding: 9px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.user-form .form .form-reg button:hover {  
+    background-color: #c2731f;
+}
+
+.user-form .form .form-sign .alert {
+    padding-top: 15px;
+    font-size: 14px;
+    color: rgb(185, 183, 183);
+}
+
+.user-form .form.active .form-reg {
+    left: -90%;
+    display: none;
+    transition: 0.5s ease;
+}
+
+.user-form .form.active .form-sign {
+    left: 0;
+    transition: 0.5s ease;
+}
+
+

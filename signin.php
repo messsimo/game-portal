@@ -23,6 +23,61 @@
         </nav>
     </header>
 
+    <!-- Секция с навигацией -->
+    <div class="location">
+        Home  > <span>Sign In</span>
+    </div>
+
+    <!-- Секция с регистрацией и входом в аккаунт -->
+    <div class="user-form">
+        <div class="bg-form">
+            <div class="reg">
+             <h2>Don't have an account?</h2>
+                <button class="btn-reg">Register</button>
+            </div>
+
+            <div class="sign">
+                <h2>Login to your account?</h2>
+                <button class="btn-sign">Sign In</button>
+         </div>
+    </div>
+        <div class="form">
+            <div class="main-form form-reg">
+                <h2>Registration</h2>
+
+                <form action="reg_post.php" method="POST">
+                    <label for="login">Login</label><br>
+                    <input type="text" name="username" id="login"><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email"><br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password"><br>
+
+                    <span class="alert-reg"></span><br>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="main--form form-sign">
+                <h2>Sign In</h2>
+
+                <form action="sign_post.php" method="POST">
+                    <label for="login">Login</label><br>
+                    <input type="text" name="username" id="login"><br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password"><br>
+
+                    <span class="alert-sign"></span><br>
+
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <?php
         // Подключение футера сайта
