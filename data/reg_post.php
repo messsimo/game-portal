@@ -50,14 +50,4 @@
         redirect();
     } else if (strpbrk($password, "+_?><!_-=:;@$%&*") === true) {
         $_SESSION["alert-reg"] = "Please, don't use (+_?><!_-=:;@$%&*) in password!";
-    } else {
-        $_SESSION["alert-reg"] = "Succesfull!";
-        // Переадрессация на страницу пользователя
-        header("Location: /user.php");
-        
-        // Занесение данных в базу данных
-        $mysql->query("INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')");
     }
-    
-    // Закрытие базы данных
-    $mysql->close();

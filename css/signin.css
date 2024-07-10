@@ -195,7 +195,7 @@ header nav ul li .active::after {
     padding-left: 70px;
     left: 0;
     top: 340px;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
 }
 
 .user-form .form .form-reg h2 {
@@ -256,7 +256,7 @@ header nav ul li .active::after {
     padding-left: 70px;
     left: 90%;
     top: 0px;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
 }
 
 .user-form .form .form-sign  h2 {
